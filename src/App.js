@@ -129,7 +129,7 @@ class App extends Component {
     try {
       console.log('Hello')
       const bookmarks = await api.get(
-        'http://localhost:3000/bookmarks'
+        '/bookmarks'
       )
       this.setState({ bookmarks: bookmarks.data })
     }
